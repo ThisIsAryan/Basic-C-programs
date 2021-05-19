@@ -10,12 +10,31 @@ int main()
     else if(x<0)
     printf("Negative numbers have inderminent factorial");
     else
-    {
+    /*{
       for(int i=x; i>0; i--)
     {
       fac= fac*i;
     }
     printf("The factorial of %d is %d", d, fac);
+    }*/
+    {
+    int i = d;
+    while(i>0)
+    {
+      fac=fac*i;
+      i--;
     }
+    printf("The factorial of %d is %d", d, fac);
+    }
+    /*{
+    int i=d;
+    do
+    {
+      fac = fac*i;
+      i--;
+    }
+    while(i>0);
+    printf("The factorial of %d is %d", d, fac);
+    }*/
     return 0;;
 }
